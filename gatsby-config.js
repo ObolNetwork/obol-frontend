@@ -8,7 +8,7 @@ module.exports = {
     defaultContract: `0x2235ADe98bcD93854eEfeB9Fe98A2cC3Dd5F6E2B`,
     network: `rinkeby`,
   },
-  pathPrefix: "/",
+  pathPrefix: "/obol-frontend",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
