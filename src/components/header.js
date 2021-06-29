@@ -1,11 +1,10 @@
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import React from "react"
 import { AppBar, Button, Grid, Toolbar, Typography } from "@material-ui/core"
+import { Link} from 'gatsby';
+import { useSnackbar } from "notistack";
+import ObolIcon from './ObolIcon';
 import mobile_bg from '../images/vertical_title.jpg'
-import { Link } from 'gatsby';
-import { useSnackbar } from "notistack"
-import ObolIcon from './ObolIcon'
-import Image from './image'
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -65,6 +64,11 @@ const useStyles = makeStyles((theme) =>
     link: {
       textDecoration: 'none',
     },
+    obolLogo: {
+      alignSelf: 'center',
+      margin: 'auto',
+      width: '100%'
+    },
     learnMore: {
       alignSelf: 'center',
       margin: 'auto'
@@ -120,7 +124,6 @@ export default function Header({ siteTitle, siteDescription }) {
               <Button color="inherit" className={classes.menuButton} variant="outlined" onClick={handleSignUpClick}>Sign Up</Button>
             </Grid>
           </Grid>
-          <Image />
           <Button color="inherit" className={classes.learnMore} variant="outlined" onClick={handleSignUpClick}>Learn More</Button>
           <Link to="/" className={classes.link}>
             <Typography className={classes.title} variant="h5">
