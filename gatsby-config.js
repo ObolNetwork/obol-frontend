@@ -35,7 +35,7 @@ module.exports = {
         name: `obol-network`,
         short_name: `Obol Network`,
         start_url: `/`,
-        background_color: `#fff`,
+        background_color: `#000`,
         theme_color: `#61ac9f`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.

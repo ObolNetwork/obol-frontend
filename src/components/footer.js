@@ -2,7 +2,7 @@
 import React from "react"
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { Link } from 'gatsby';
-import ObolIcon from './ObolIcon';
+import ObolIconWhite from './ObolIconWhite';
 
 const useStyles = makeStyles((theme) =>
     createStyles({
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) =>
         //   padding: `0rem 0 9.0875rem 0`,
         // }
         root: {
-            backgroundColor: `#2E2E2E`,
+            backgroundColor: `#141414`,
             display: 'flex',
             padding: '1rem',
             minHeight: '5rem',
@@ -28,12 +28,10 @@ const useStyles = makeStyles((theme) =>
         logo: {
             //maxWidth: '5rem',
             textDecoration: 'none',
-            color: '#424242',
+            color: '#626262',
             margin: 'auto',
-            fontSize: 'large',
-            backgroundColor: 'rgba(255, 255, 255, 0.85)',
             borderRadius: '4px',
-            padding: '0.2rem 0.4rem',
+            padding: '0.1rem 0.2rem',
             boxSizing: 'content-box',
         },
         social: {
@@ -53,12 +51,12 @@ const useStyles = makeStyles((theme) =>
         },
         link: {
             textDecoration: 'none',
-            color: '#707070',
+            color: '#909090',
         },
         text: {
             textDecoration: 'none',
             textAlign: 'center',
-            color: '#707070',
+            color: '#909090',
             margin: 'auto',
             padding: '1rem',
             // flexGrow: 1
@@ -90,7 +88,7 @@ export default function Footer() {
     return (
         <div className={classes.root}>
 
-            <ObolIcon className={classes.logo} />
+            <ObolIconWhite className={classes.logo} />
 
             {/* Copyright text */}
             <p className={classes.text}>

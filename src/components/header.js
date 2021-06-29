@@ -1,20 +1,15 @@
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import React from "react"
 import { AppBar, Button, Grid, Toolbar, Typography } from "@material-ui/core"
-import { Link} from 'gatsby';
+import { Link } from 'gatsby';
 import { useSnackbar } from "notistack";
-import ObolIcon from './ObolIcon';
+import ObolIconWhite from './ObolIconWhite';
 import mobile_bg from '../images/vertical_title.jpg'
+import obol_logo from '../images/obolnetwork.png'
 
 const useStyles = makeStyles((theme) =>
   createStyles({
-    // root: {
-    //   flexGrow: 1,
-    //   background: `transparent url(${bg}) 0% 0% no-repeat padding-box;`,
-    //   margin: `0 auto`,
-    //   width: '100%',
-    //   padding: `0rem 0 9.0875rem 0`,
-    // }
+
     root: {
       backgroundColor: `transparent`,
       backgroundImage: `url(${mobile_bg})`,
@@ -33,8 +28,8 @@ const useStyles = makeStyles((theme) =>
       textDecoration: 'none',
       color: '#424242',
       fontSize: '22pt',
-      backgroundColor: 'rgba(255, 255, 255, 0.85)',
-      borderRadius: '4px',
+      // backgroundColor: 'rgba(255, 255, 255, 0.85)',
+      // borderRadius: '4px',
       padding: '0.2rem 0.4rem',
       boxSizing: 'content-box',
     },
@@ -63,11 +58,17 @@ const useStyles = makeStyles((theme) =>
     },
     link: {
       textDecoration: 'none',
+      color: '#fff',
     },
     obolLogo: {
-      alignSelf: 'center',
-      margin: 'auto',
-      width: '100%'
+      backgroundColor: `transparent`,
+      backgroundImage: `url(${obol_logo})`,
+      backgroundRepeat: `no-repeat`,
+      backgroundOrigin: `padding-box`,
+      backgroundPosition: '50%',
+      backgroundSize: `contain`,
+      width: '100%',
+      height: '10rem'
     },
     learnMore: {
       alignSelf: 'center',
@@ -117,15 +118,26 @@ export default function Header({ siteTitle, siteDescription }) {
           <Grid container className={classes.menu}>
             <Grid item>
               <Link to="/" className={classes.link}>
-                <ObolIcon className={classes.menuLogo} />
+                <ObolIconWhite className={classes.menuLogo} />
               </Link>
             </Grid>
             <Grid item>
-              <Button color="inherit" className={classes.menuButton} variant="outlined" onClick={handleSignUpClick}>Sign Up</Button>
+              <Button
+                component={Link}
+                to={"https://discord.gg/n6ebKsX46w"}
+                rel="noopener noreferrer"
+                target="_blank"
+                color="inherit"
+                className={classes.menuButton}
+                variant="outlined"
+                size={'small'}>
+                Sign Up
+              </Button>
             </Grid>
           </Grid>
+          <div className={classes.obolLogo} />
           <Button color="inherit" className={classes.learnMore} variant="outlined" onClick={handleSignUpClick}>Learn More</Button>
-          <Link to="/" className={classes.link}>
+          {/* <Link to="/" className={classes.link}>
             <Typography className={classes.title} variant="h5">
               {siteTitle.toUpperCase()}
             </Typography>
@@ -134,20 +146,10 @@ export default function Header({ siteTitle, siteDescription }) {
             <Typography className={classes.subtitle} variant="h5" >
               {siteDescription.toUpperCase()}
             </Typography>
-          </Link>
+          </Link> */}
         </Toolbar>
       </AppBar>
     </div>
 
   )
 }
-
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
-
-// export default Header

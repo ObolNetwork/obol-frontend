@@ -96,7 +96,6 @@ export default function IndexPage({ data }) {
   return (
     <Layout>
       <SEO title="Obol Network" />
-      <EmailSubmission></EmailSubmission>
     </Layout>
   )
 }
