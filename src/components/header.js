@@ -130,8 +130,10 @@ export default function Header({ siteTitle, siteDescription }) {
         layout="fullWidth"
         loading="eager"
         alt=""
+        quality={100}
         placeholder="blurred"
         objectPosition="50%"
+        jpgOptions={{quality: 100}}
         src={`../images/vertical_title.jpg`}
       />
       <AppBar position="static" className={classes.appbar}>
