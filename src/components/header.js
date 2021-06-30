@@ -1,22 +1,30 @@
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import React from "react"
-import { AppBar, Button, Grid, Toolbar, Typography } from "@material-ui/core"
+import { AppBar, Button, Grid, Toolbar } from "@material-ui/core"
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import { useSnackbar } from "notistack";
 import ObolIconWhite from './ObolIconWhite';
-import mobile_bg from '../images/vertical_title.jpg'
 import obol_logo from '../images/obolnetwork.png'
 
 const useStyles = makeStyles((theme) =>
   createStyles({
 
     root: {
-      backgroundColor: `#141414`,
-      backgroundImage: `url(${mobile_bg})`,
-      backgroundRepeat: `no-repeat`,
-      backgroundOrigin: `padding-box`,
-      backgroundPosition: '50%',
-      backgroundSize: `cover`,
+      display: 'grid',
+      backgroundColor: `#fff`,
+      // Not using background images as they can't be loaded in a performant manner
+      // switched to StaticImage instead with overlapping grid elements.
+      // backgroundImage: `url(${mobile_bg})`,
+      // backgroundRepeat: `no-repeat`,
+      // backgroundOrigin: `padding-box`,
+      // backgroundPosition: '50%',
+      // backgroundSize: `cover`,
+    },
+    bg_image: {
+      gridArea: "1/1",
+      maxHeight: '100vh',
+      backgroundColor: '#141414'
     },
     menu: {
       marginRight: theme.spacing(1),
@@ -40,6 +48,10 @@ const useStyles = makeStyles((theme) =>
     },
     appbar: {
       backgroundColor: `rgba(75,75,75, 0.2)`,
+      gridArea: '1/1',
+      position: 'relative',
+      placeItems: 'center',
+      display: 'grid'
       // opacity: 0.72
     },
     toolbar: {
@@ -113,6 +125,15 @@ export default function Header({ siteTitle, siteDescription }) {
   return (
 
     <div className={classes.root}>
+      <StaticImage
+        className={classes.bg_image}
+        layout="fullWidth"
+        loading="eager"
+        alt=""
+        placeholder="blurred"
+        objectPosition="50%"
+        src={`../images/vertical_title.jpg`}
+      />
       <AppBar position="static" className={classes.appbar}>
         <Toolbar className={classes.toolbar}>
           <Grid container className={classes.menu}>
