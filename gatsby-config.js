@@ -1,12 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Obol Network`,
-    description: `Decentralised proof of stake validation`,
+    description: `Decentralised Ethereum Staking`,
     author: `@ObolNetwork`,
-    backendURL: `https://develop.kyne.eu`,
-    baseURL: `https://rugby.kyne.eu`,
-    defaultContract: `0x2235ADe98bcD93854eEfeB9Fe98A2cC3Dd5F6E2B`,
-    network: `rinkeby`,
+    baseURL: `https://obol.network`,
   },
   pathPrefix: "/obol-frontend",
   plugins: [

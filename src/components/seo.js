@@ -27,7 +27,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const domainName = !!site.siteMetadata.baseURL ? site.siteMetadata.baseURL  : "https://obol.kyne.eu"
+  const domainName = !!site.siteMetadata.baseURL ? site.siteMetadata.baseURL  : "https://obol.network"
 
   return (
     <Helmet

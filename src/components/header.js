@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) =>
   createStyles({
 
     root: {
-      backgroundColor: `transparent`,
+      backgroundColor: `#141414`,
       backgroundImage: `url(${mobile_bg})`,
       backgroundRepeat: `no-repeat`,
       backgroundOrigin: `padding-box`,
