@@ -6,6 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { useSnackbar } from "notistack";
 import ObolIconWhite from './ObolIconWhite';
 import obol_logo from '../images/obolnetwork.png'
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -88,20 +89,22 @@ const useStyles = makeStyles((theme) =>
     },
     title: {
       alignSelf: 'flex-start',
-      font: "normal normal normal 42px/48px Montserrat",
+      font: "normal normal normal 42px/48px Rockwell",
       color: 'white',
       // backgroundColor: 'red',
       [theme.breakpoints.up('md')]: {
-        font: "normal normal normal 64px/72px Montserrat",
+        font: "normal normal normal 64px/72px Rockwell",
       },
     },
     subtitle: {
+      alignSelf: 'center',
+      margin: 'auto',
       colour: 'white',
-      font: "normal normal 300 26px/34px Montserrat",
+      font: "normal normal 300 26px/34px Rockwell",
       color: 'white',
       // backgroundColor: 'green',
       [theme.breakpoints.up('md')]: {
-        font: "normal normal normal 36px/48px Montserrat",
+        font: "normal normal normal 36px/48px Rockwell",
       },
     },
   }),
@@ -154,22 +157,23 @@ export default function Header({ siteTitle, siteDescription }) {
                 className={classes.menuButton}
                 variant="outlined"
                 size={'small'}>
-                Sign Up
+                Join the Discord
               </Button>
             </Grid>
           </Grid>
           <div className={classes.obolLogo} />
-          <Button color="inherit" className={classes.learnMore} variant="outlined" onClick={handleSignUpClick}>Learn More</Button>
+          {/* <Button color="inherit" className={classes.learnMore} variant="outlined" onClick={handleSignUpClick}>Learn More</Button> */}
+          {/* <Typography className={classes.learnMore}  >Learn More</Typography> */}
           {/* <Link to="/" className={classes.link}>
             <Typography className={classes.title} variant="h5">
               {siteTitle.toUpperCase()}
             </Typography>
-          </Link>
-          <Link to="/" className={classes.link}>
-            <Typography className={classes.subtitle} variant="h5" >
-              {siteDescription.toUpperCase()}
-            </Typography>
           </Link> */}
+          {/* <Link to="/" className={classes.link}> */}
+            <Typography className={classes.subtitle} variant="h5" >
+              {siteDescription}
+            </Typography>
+          {/* </Link> */}
         </Toolbar>
       </AppBar>
     </div>

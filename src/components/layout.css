@@ -1,8 +1,9 @@
 html {
-  font-family: "Montserrat", "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Rockwell", "Montserrat", "Roboto", "Helvetica", "Arial", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;

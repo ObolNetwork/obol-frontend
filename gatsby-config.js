@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Obol Network`,
-    description: `Decentralised Ethereum Staking`,
+    description: `The Trustless Infrastructure Protocol`,
     author: `@ObolNetwork`,
-    baseURL: `https://obol.network`,
+    baseURL: `https://obol.tech`,
   },
-  pathPrefix: "/obol-frontend",
+  pathPrefix: "/",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
