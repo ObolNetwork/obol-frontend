@@ -106,7 +106,7 @@ export default function Footer() {
                     to="https://obol.network/"
                     rel="noopener noreferrer"
                     className={classes.link}
-                >Obol Network
+                >Obol Technologies, Inc.
                 </Link>
             </p>
 

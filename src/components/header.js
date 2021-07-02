@@ -4,8 +4,8 @@ import { AppBar, Button, Grid, Toolbar } from "@material-ui/core"
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useSnackbar } from "notistack";
-import ObolIconWhite from './ObolIconWhite';
-import obol_logo from '../images/obolnetwork.png'
+import ObolIcon from './ObolIcon';
+import obol_logo from '../images/obolnetworkblack.png'
 import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) =>
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) =>
     bg_image: {
       gridArea: "1/1",
       maxHeight: '100vh',
-      backgroundColor: '#141414'
+      backgroundColor: '#fff'
     },
     menu: {
       marginRight: theme.spacing(1),
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) =>
     },
     menuLogo: {
       textDecoration: 'none',
-      color: '#424242',
+      color: '#000',
       fontSize: '22pt',
       // backgroundColor: 'rgba(255, 255, 255, 0.85)',
       // borderRadius: '4px',
@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme) =>
       // marginRight: theme.spacing(1),
       // alignSelf: 'flex-end',
       // marginBottom: 'auto'
+      color: 'black'
     },
     appbar: {
       backgroundColor: `rgba(75,75,75, 0.2)`,
@@ -65,9 +66,14 @@ const useStyles = makeStyles((theme) =>
       paddingBottom: theme.spacing(2),
       flexDirection: 'column',
       backgroundColor: `transparent`,
-      [theme.breakpoints.up('md')]: {
-        minHeight: 350,
-      },
+      // borderWidth: `5px`,
+      // borderStyle: `solid`,
+      // // borderColor: 'blue',
+      // borderImage: `linear-gradient(45deg, #19314b, #37606b, #61ac9f, #81bba3)`
+      // border: `10vmin solid`,
+      // borderRadius: `10vmin`,
+	    // borderImage: `conic-gradient(from 315deg, #19314b, #37606b, #61ac9f, #81bba3, #61ac9f, #37606b, #19314b) 1`,
+      // animation: `10s rotate linear infinite`
     },
     link: {
       textDecoration: 'none',
@@ -90,7 +96,7 @@ const useStyles = makeStyles((theme) =>
     title: {
       alignSelf: 'flex-start',
       font: "normal normal normal 42px/48px Rockwell",
-      color: 'white',
+      color: 'black',
       // backgroundColor: 'red',
       [theme.breakpoints.up('md')]: {
         font: "normal normal normal 64px/72px Rockwell",
@@ -99,9 +105,9 @@ const useStyles = makeStyles((theme) =>
     subtitle: {
       alignSelf: 'center',
       margin: 'auto',
-      colour: 'white',
       font: "normal normal 300 26px/34px Rockwell",
-      color: 'white',
+      color: 'black',
+      textShadow: `0px 0px 5px #fff`,
       // backgroundColor: 'green',
       [theme.breakpoints.up('md')]: {
         font: "normal normal normal 36px/48px Rockwell",
@@ -132,19 +138,19 @@ export default function Header({ siteTitle, siteDescription }) {
         className={classes.bg_image}
         layout="fullWidth"
         loading="eager"
-        alt=""
+        alt="Background Image"
         quality={100}
         placeholder="blurred"
         objectPosition="50%"
         jpgOptions={{quality: 100}}
-        src={`../images/vertical_title.jpg`}
+        src={`../images/vertical_title_white.jpg`}
       />
       <AppBar position="static" className={classes.appbar}>
         <Toolbar className={classes.toolbar}>
           <Grid container className={classes.menu}>
             <Grid item>
               <Link to="/" className={classes.link}>
-                <ObolIconWhite className={classes.menuLogo} />
+                <ObolIcon className={classes.menuLogo} />
               </Link>
             </Grid>
             <Grid item>
