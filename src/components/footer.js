@@ -103,7 +103,7 @@ export default function Footer() {
             <p className={classes.text}>
                 &#169; {new Date().getFullYear().toString() + " "}
                 <Link
-                    to="https://obol.network/"
+                    to="/"
                     rel="noopener noreferrer"
                     className={classes.link}
                 >Obol Technologies, Inc.

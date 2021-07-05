@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) =>
     },
     toolbar: {
       minHeight: 450,
-      height: '100vh',
+      height: '97vh',
       width: '100%',
       alignItems: 'flex-start',
       justifyContent: 'flex-end',
