@@ -24,11 +24,12 @@ import Footer from "./footer"
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: `#000000`,
-      light: `#c5c5c5`,
+      light: `#61ac9f`,
+      main: `#37606b`,
+      dark: `#19314b`
     },
     secondary: {
-      main: `#f6c26c`,
+      main: `#81bba3`,
     },
     info: {
       main: `#616161`,
@@ -56,7 +57,7 @@ const Layout = ({ children }) => {
           <Header
             siteTitle={data.site.siteMetadata.title}
             siteDescription={data.site.siteMetadata.description}
-            style={{ "margin-bottom": 0 }}
+            // style={{ "margin-bottom": 0 }}
           />
           <div
             style={{
