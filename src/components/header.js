@@ -3,7 +3,6 @@ import React from "react"
 import { AppBar, Button, Grid, Toolbar } from "@material-ui/core"
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { useSnackbar } from "notistack";
 import ObolIcon from './ObolIcon';
 import obol_logo from '../images/obolnetworkblack.png';
 import { Typography } from '@material-ui/core';
@@ -28,12 +27,7 @@ const useStyles = makeStyles((theme) =>
       gridArea: "1/1",
       maxHeight: '100vh',
       backgroundColor: '#fff',
-      //margin: '3em 1em 2em 1em',
       borderRadius: `1em`
-      // [theme.breakpoints.down('md')]: {
-      //   transform: `rotate(90deg)`,
-      //   maxHeight: `100%`
-      // },
     },
     menu: {
       marginRight: theme.spacing(1),
@@ -76,14 +70,6 @@ const useStyles = makeStyles((theme) =>
       paddingBottom: theme.spacing(2),
       flexDirection: 'column',
       backgroundColor: `transparent`,
-      // borderWidth: `5px`,
-      // borderStyle: `solid`,
-      // // borderColor: 'blue',
-      // borderImage: `linear-gradient(45deg, #19314b, #37606b, #61ac9f, #81bba3)`
-      // border: `10vmin solid`,
-      // borderRadius: `10vmin`,
-      // borderImage: `conic-gradient(from 315deg, #19314b, #37606b, #61ac9f, #81bba3, #61ac9f, #37606b, #19314b) 1`,
-      // animation: `10s rotate linear infinite`
     },
     link: {
       textDecoration: 'none',
@@ -130,18 +116,6 @@ const useStyles = makeStyles((theme) =>
 
 export default function Header({ siteTitle, siteDescription }) {
   const classes = useStyles();
-  const { enqueueSnackbar } = useSnackbar();
-
-  // Temporary pop up saying sign up coming soon
-  function handleSignUpClick(event) {
-    console.log(typeof (event))
-    console.log(event)
-    enqueueSnackbar("Coming Soon", {
-      variant: 'info',
-      autoHideDuration: 3000,
-    });
-
-  }
 
   return (
     <div className={classes.root}>
@@ -151,7 +125,6 @@ export default function Header({ siteTitle, siteDescription }) {
         loading="eager"
         alt="Background Image"
         placeholder="blurred"
-        // objectPosition="50%"
         src={`../images/obol_bg_image.png`}
       />
       <AppBar position="static" className={classes.appbar}>

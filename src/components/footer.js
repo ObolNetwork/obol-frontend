@@ -2,25 +2,12 @@
 import React from "react"
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { Link } from 'gatsby';
-import { StaticImage, getImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import ObolIconWhite from './ObolIconWhite';
 
 
-// // Prepare static icons that are not svgs
-
-// const image = getImage(data.avatar)
-// // This is the same as:
-// const image = data?.avatar?.childImageSharp?.gatsbyImageData
-
 const useStyles = makeStyles((theme) =>
     createStyles({
-        // root: {
-        //   flexGrow: 1,
-        //   background: `transparent url(${bg}) 0% 0% no-repeat padding-box;`,
-        //   margin: `0 auto`,
-        //   width: '100%',
-        //   padding: `0rem 0 9.0875rem 0`,
-        // }
         root: {
             backgroundColor: `#141414`,
             display: 'flex',
