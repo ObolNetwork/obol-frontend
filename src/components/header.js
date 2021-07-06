@@ -97,6 +97,7 @@ const useStyles = makeStyles((theme) =>
       backgroundPosition: '50%',
       backgroundSize: `contain`,
       width: '100%',
+      maxWidth: `800px`,
       height: '10rem',
       margin: `auto`,
     },
