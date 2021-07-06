@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) =>
 
     root: {
       display: 'grid',
-      borderRadius: '1em',
+      // borderRadius: '1em',
       padding: '1em',
       background: `conic-gradient(from 315deg, #19314b, #37606b, #61ac9f, #81bba3, #61ac9f, #37606b, #19314b)`
       // Not using background images as they can't be loaded in a performant manner
