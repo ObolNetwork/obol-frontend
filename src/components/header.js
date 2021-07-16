@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) =>
     bg_image: {
       gridArea: "1/1",
       maxHeight: '100vh',
-      backgroundColor: '#141414',
+      backgroundColor: '#090909',
       borderRadius: `1em`
     },
     menu: {

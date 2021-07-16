@@ -9,7 +9,7 @@ import ObolIconWhite from './ObolIconWhite';
 const useStyles = makeStyles((theme) =>
     createStyles({
         root: {
-            backgroundColor: `#141414`,
+            backgroundColor: `#090909`,
             display: 'flex',
             padding: '1rem',
             minHeight: '5rem',
