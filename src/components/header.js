@@ -3,8 +3,8 @@ import React from "react"
 import { AppBar, Button, Grid, Toolbar } from "@material-ui/core"
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import ObolIcon from './ObolIcon';
-import obol_logo from '../images/obolnetworkblack.png';
+import ObolIconWhite from './ObolIconWhite';
+import obol_logo from '../images/obolnetwork.png';
 import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) =>
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) =>
     bg_image: {
       gridArea: "1/1",
       maxHeight: '100vh',
-      backgroundColor: '#fff',
+      backgroundColor: '#141414',
       borderRadius: `1em`
     },
     menu: {
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) =>
       // marginRight: theme.spacing(1),
       // alignSelf: 'flex-end',
       // marginBottom: 'auto'
-      color: 'black'
+      color: '#fff'
     },
     appbar: {
       backgroundColor: `transparent`,
@@ -86,6 +86,9 @@ const useStyles = makeStyles((theme) =>
       maxWidth: `800px`,
       height: '10rem',
       margin: `auto`,
+      [theme.breakpoints.up('lg')]: {
+        height: "6rem",
+      },
     },
     learnMore: {
       alignSelf: 'center',
@@ -94,7 +97,7 @@ const useStyles = makeStyles((theme) =>
     title: {
       alignSelf: 'center',
       font: "normal normal normal 42px/48px Rockwell",
-      color: 'black',
+      color: '#fff',
       // backgroundColor: 'red',
       [theme.breakpoints.up('md')]: {
         font: "normal normal normal 64px/72px Rockwell",
@@ -102,10 +105,11 @@ const useStyles = makeStyles((theme) =>
     },
     subtitle: {
       alignSelf: 'center',
+      textAlign: 'center',
       margin: 'auto',
       font: "normal normal 300 26px/34px Rockwell",
-      color: 'black',
-      textShadow: `0px 0px 5px #fff`,
+      color: '#fff',
+      // textShadow: `0px 0px 5px #fff`,
       // backgroundColor: 'green',
       [theme.breakpoints.up('md')]: {
         font: "normal normal normal 36px/48px Rockwell",
@@ -132,7 +136,7 @@ export default function Header({ siteTitle, siteDescription }) {
           <Grid container className={classes.menu}>
             <Grid item>
               <Link to="/" className={classes.link}>
-                <ObolIcon className={classes.menuLogo} />
+                <ObolIconWhite className={classes.menuLogo} />
               </Link>
             </Grid>
             <Grid item>
