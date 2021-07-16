@@ -56,25 +56,7 @@ const useStyles = makeStyles((theme) =>
             margin: 'auto',
             padding: '1rem',
             // flexGrow: 1
-        },
-        title: {
-            alignSelf: 'flex-start',
-            font: "normal normal normal 42px/48px Montserrat",
-            color: 'white',
-            // backgroundColor: 'red',
-            [theme.breakpoints.up('md')]: {
-                font: "normal normal normal 64px/72px Montserrat",
-            },
-        },
-        subtitle: {
-            colour: 'white',
-            font: "normal normal 300 26px/34px Montserrat",
-            color: 'white',
-            // backgroundColor: 'green',
-            [theme.breakpoints.up('md')]: {
-                font: "normal normal normal 36px/48px Montserrat",
-            },
-        },
+        }
     }),
 );
 
@@ -106,7 +88,7 @@ export default function Footer() {
                     target="_blank"
                 >
                     <svg
-                        fill="currentColor"
+                        fill="#fff"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"

@@ -96,23 +96,23 @@ const useStyles = makeStyles((theme) =>
     },
     title: {
       alignSelf: 'center',
-      font: "normal normal normal 42px/48px Rockwell",
+      font: "normal normal normal 42px/48px Montserrat",
       color: '#fff',
       // backgroundColor: 'red',
       [theme.breakpoints.up('md')]: {
-        font: "normal normal normal 64px/72px Rockwell",
+        font: "normal normal normal 64px/72px Montserrat",
       },
     },
     subtitle: {
       alignSelf: 'center',
       textAlign: 'center',
       margin: 'auto',
-      font: "normal normal 300 26px/34px Rockwell",
+      font: "normal normal 500 26px/34px Montserrat",
       color: '#fff',
       // textShadow: `0px 0px 5px #fff`,
       // backgroundColor: 'green',
-      [theme.breakpoints.up('md')]: {
-        font: "normal normal normal 36px/48px Rockwell",
+      [theme.breakpoints.up('lg')]: {
+        font: "normal normal 500 36px/48px Montserrat",
       },
     },
   }),
