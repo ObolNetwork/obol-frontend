@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) =>
         },
         social: {
             maxWidth: '1.5rem',
+            width: '100%',
             textDecoration: 'none',
             margin: '0 0.15rem 0 0.15rem',
             color: 'white',
