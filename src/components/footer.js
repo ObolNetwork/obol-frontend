@@ -76,7 +76,7 @@ export default function Footer() {
                     to="/"
                     rel="noopener noreferrer"
                     className={classes.link}
-                >Obol Technologies, Inc.
+                >Obol Technologies Inc.
                 </Link>
             </p>
 
@@ -126,7 +126,23 @@ export default function Footer() {
                         layout="constrained"
                         placeholder="none"
                         className={classes.social}
-                        style={{ margin: '0.2rem 0.15rem 0 0.15rem', }}
+                        style={{ margin: '0.1rem 0.15rem 0rem 0.15rem', }}
+                    />
+                </a>
+                {/* Ghost Blog */}
+                <a
+                    href="https://blog.obol.tech/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+
+                    <StaticImage
+                        src="../images/ghost-cms-white.png"
+                        alt="Blog Icon"
+                        layout="constrained"
+                        placeholder="none"
+                        className={classes.social}
+                        style={{ padding: `0.1rem`, }}
                     />
                 </a>
             </span>
