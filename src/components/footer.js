@@ -4,6 +4,7 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import ObolIconWhite from './ObolIconWhite';
+import WorkIcon from '@material-ui/icons/Work';
 
 
 const useStyles = makeStyles((theme) =>
@@ -143,6 +144,16 @@ export default function Footer() {
                         placeholder="none"
                         className={classes.social}
                         style={{ padding: `0.1rem`, }}
+                    />
+                </a>
+                {/* Lever Job Site */}
+                <a
+                    href="https://jobs.lever.co/obol-tech/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    <WorkIcon
+                        className={classes.social}
                     />
                 </a>
             </span>
