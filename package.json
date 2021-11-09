@@ -40,9 +40,15 @@
     "jest": "^26.6.3",
     "prettier": "2.2.1"
   },
-  "eslintConfig":{
-    "rules":{
-      "react/jsx-pascal-case": [1, { "allowAllCaps": true, "allowNamespace": true}]
+  "eslintConfig": {
+    "rules": {
+      "react/jsx-pascal-case": [
+        1,
+        {
+          "allowAllCaps": true,
+          "allowNamespace": true
+        }
+      ]
     }
   },
   "keywords": [
