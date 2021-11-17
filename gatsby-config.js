@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Obol Network`,
-    description: `The Ethereum Shared Secret Validator Network`,
+    description: `The Multi-Operator Validator Network`,
     author: `@ObolNetwork`,
     baseURL: `https://obol.tech`,
   },
