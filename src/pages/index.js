@@ -1,17 +1,22 @@
 import React from "react"
-import { ChakraProvider } from "@chakra-ui/react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Box, ChakraProvider } from "@chakra-ui/react"
 import Header from "../components.v2/Header"
 import theme from "../theme"
+import Hero from "../components.v2/Hero"
 
-export default function IndexPage() {
+const IndexPage = () => {
+  return (
+    <Box bg="obol.black" h="100vh">
+      <Header />
+      <Hero />
+    </Box>
+  )
+}
+
+export default function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Header />
-      <Layout>
-        <SEO title="Obol Network" />
-      </Layout>
+      <IndexPage />
     </ChakraProvider>
   )
 }

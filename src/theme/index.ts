@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react"
 import { Button } from "./Button"
+import { Text } from "./Text"
 
 const colors = {
   obol: {
@@ -19,6 +20,7 @@ const index = extendTheme({
   colors,
   components: {
     Button,
+    Text,
   },
 })
 
