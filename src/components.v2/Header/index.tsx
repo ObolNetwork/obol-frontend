@@ -3,6 +3,7 @@ import HeaderLink, { HeaderLinkProps } from "./HeaderLink"
 import { Box, Button, HStack, Image, Icon } from "@chakra-ui/react"
 import { FaDiscord } from "react-icons/all"
 import ObolBrand from "../../images/obolnetwork.png"
+import { Href } from "../../types"
 
 const headerLinks: HeaderLinkProps[] = [
   {
@@ -23,7 +24,7 @@ const headerLinks: HeaderLinkProps[] = [
   },
   {
     text: "Blog",
-    href: "",
+    href: Href.Blog,
   },
 ]
 
@@ -36,6 +37,8 @@ const Header = () => {
       position="relative"
       display="flex"
       justifyContent="flex-end"
+      borderBottom="2px solid"
+      borderColor="obol.lightGreen"
     >
       <Image
         height="30px"
@@ -51,7 +54,7 @@ const Header = () => {
       />
       <HStack spacing={4}>
         {headerLinks.map(link => (
-          <HeaderLink {...link} />
+          <HeaderLink {...link} key={link.text} />
         ))}
         <Button leftIcon={<Icon fontSize="24px" as={FaDiscord} />} size="sm">
           Join us
