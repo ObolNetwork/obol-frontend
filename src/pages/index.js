@@ -1,19 +1,16 @@
 import React from "react"
 import { Box, ChakraProvider } from "@chakra-ui/react"
-import Header from "../components.v2/Header"
 import theme from "../theme"
-import Hero from "../components.v2/Hero"
-import BuildOnObol from "../components.v2/BuildOnObol"
-import DotsDivider from "../components.v2/DotsDivider"
+import Header from "../components.v2/Header"
+import LandingPage from "./Landing"
+import Footer from "../components.v2/Footer"
 
 const IndexPage = () => {
   return (
     <Box bg="obol.black" h="100vh">
       <Header />
-      <Hero />
-      <DotsDivider />
-      <BuildOnObol />
-      <DotsDivider />
+      <LandingPage />
+      <Footer />
     </Box>
   )
 }

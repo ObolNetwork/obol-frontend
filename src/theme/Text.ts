@@ -1,4 +1,4 @@
-export const Button = {
+export const Text = {
   baseStyle: {
     color: "white",
   },
