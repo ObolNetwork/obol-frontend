@@ -4,12 +4,25 @@ import { Box, Link } from "@chakra-ui/react"
 export interface HeaderLinkProps {
   text: string
   href: string
+  isMobile?: boolean
 }
 
-const HeaderLink: FC<HeaderLinkProps> = ({ text, href }) => {
+const HeaderLink: FC<HeaderLinkProps> = ({ text, href, isMobile }) => {
   return (
-    <Box className="link-container">
-      <Link color="white" href={href} _hover={{ textDecoration: "none" }}>
+    <Box
+      className="link-container"
+      display={
+        isMobile
+          ? { base: "inline", md: "none" }
+          : { base: "none", md: "inline" }
+      }
+    >
+      <Link
+        color="white"
+        href={href}
+        _hover={{ textDecoration: "none" }}
+        fontSize={{ base: "lg", md: undefined }}
+      >
         {text}
       </Link>
       <Box
