@@ -15,7 +15,7 @@ const DotsDivider = () => {
   return (
     <HStack spacing={4} my={12} justifyContent="center">
       {dotColors.map((color, i) => (
-        <Circle size="10px" bg={color} key={`${color - i}`} />
+        <Circle size="10px" bg={color} key={`${color}-${i}`} />
       ))}
     </HStack>
   )

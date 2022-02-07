@@ -9,10 +9,10 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react"
-import heroBg from "../../images/hero-bg.png"
-import obolStack from "../../images/obol-stack.png"
-import { Body, Header2, Header5 } from "../Typography"
-import { Href } from "../../types"
+import heroBg from "../../../images/hero-bg.png"
+import obolStack from "../../../images/obol-stack.png"
+import { Body, Header2, Header5 } from "../../../components.v2/Typography"
+import { Href } from "../../../types"
 
 const Hero = () => {
   return (
