@@ -41,7 +41,9 @@ const Hero = () => {
         >
           <VStack>
             <Image src={obolStack} />
-            <Button>Join the Proto Community</Button>
+            <Button as="a" target="_blank" href={Href.ProtoForm}>
+              Join the Proto Community
+            </Button>
             <HStack>
               <Body>Check out</Body>
               <Link href={Href.Blog} color="obol.lightGreen" fontWeight="700">

@@ -16,6 +16,7 @@ const BuildOnObol = () => {
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="1100px 600px"
+      id="build"
     >
       <Image
         src={isLargerThan900 ? obolHexes : obolHexesMobile}

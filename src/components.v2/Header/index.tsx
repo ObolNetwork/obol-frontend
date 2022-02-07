@@ -8,19 +8,19 @@ import DesktopHeader from "./DesktopHeader"
 const headerLinks: HeaderLinkProps[] = [
   {
     text: "Build",
-    href: "",
+    href: "#build",
   },
   {
     text: "Supporters",
-    href: "",
+    href: "#supporters",
   },
   {
     text: "Team",
-    href: "",
+    href: "#team",
   },
   {
     text: "Talent",
-    href: "",
+    href: Href.Talent,
   },
   {
     text: "Blog",

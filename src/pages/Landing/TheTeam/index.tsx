@@ -3,7 +3,7 @@ import { Box, Text } from "@chakra-ui/react"
 
 const TheTeam: FC = () => {
   return (
-    <Box>
+    <Box id="team">
       <Text>the team</Text>
     </Box>
   )

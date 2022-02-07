@@ -1,20 +1,19 @@
-import { createStyles, makeStyles } from '@material-ui/core/styles';
+import { createStyles, makeStyles } from "@material-ui/core/styles"
 import React from "react"
 import { AppBar, Button, Grid, Toolbar } from "@material-ui/core"
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
-import ObolIconWhite from './ObolIconWhite';
-import obol_logo from '../images/obolnetwork.png';
-import { Typography } from '@material-ui/core';
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import ObolIconWhite from "./ObolIconWhite"
+import obol_logo from "../images/obolnetwork.png"
+import { Typography } from "@material-ui/core"
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles(theme =>
   createStyles({
-
     root: {
-      display: 'grid',
+      display: "grid",
       // borderRadius: '1em',
-      padding: '1em',
-      background: `conic-gradient(from 315deg, #19314b, #37606b, #61ac9f, #81bba3, #61ac9f, #37606b, #19314b)`
+      padding: "1em",
+      background: `conic-gradient(from 315deg, #19314b, #37606b, #61ac9f, #81bba3, #61ac9f, #37606b, #19314b)`,
       // Not using background images as they can't be loaded in a performant manner
       // switched to StaticImage instead with overlapping grid elements.
       // backgroundImage: `url(${mobile_bg})`,
@@ -25,101 +24,101 @@ const useStyles = makeStyles((theme) =>
     },
     bg_image: {
       gridArea: "1/1",
-      maxHeight: '100vh',
-      backgroundColor: '#090909',
-      borderRadius: `1em`
+      maxHeight: "100vh",
+      backgroundColor: "#090909",
+      borderRadius: `1em`,
     },
     menu: {
       marginRight: theme.spacing(1),
-      alignSelf: 'flex-end',
-      marginBottom: 'auto',
-      justifyContent: 'space-between'
+      alignSelf: "flex-end",
+      marginBottom: "auto",
+      justifyContent: "space-between",
     },
     menuLogo: {
-      textDecoration: 'none',
-      color: '#000',
-      fontSize: '22pt',
+      textDecoration: "none",
+      color: "#000",
+      fontSize: "22pt",
       // backgroundColor: 'rgba(255, 255, 255, 0.85)',
       // borderRadius: '4px',
-      padding: '0.2rem 0.4rem',
-      boxSizing: 'content-box',
+      padding: "0.2rem 0.4rem",
+      boxSizing: "content-box",
     },
     menuButton: {
       // marginRight: theme.spacing(1),
       // alignSelf: 'flex-end',
       // marginBottom: 'auto'
-      color: '#fff'
+      color: "#fff",
     },
     appbar: {
       backgroundColor: `transparent`,
       // backgroundColor: `rgba(75,75,75, 0.2)`,
-      gridArea: '1/1',
-      position: 'relative',
-      placeItems: 'center',
-      display: 'grid',
-      boxShadow: 'none'
+      gridArea: "1/1",
+      position: "relative",
+      placeItems: "center",
+      display: "grid",
+      boxShadow: "none",
       // opacity: 0.72
     },
     toolbar: {
       minHeight: 450,
-      height: '97vh',
-      width: '100%',
-      alignItems: 'flex-start',
-      justifyContent: 'flex-end',
+      height: "97vh",
+      width: "100%",
+      alignItems: "flex-start",
+      justifyContent: "flex-end",
       paddingTop: theme.spacing(1),
       paddingBottom: theme.spacing(2),
-      flexDirection: 'column',
+      flexDirection: "column",
       backgroundColor: `transparent`,
     },
     link: {
-      textDecoration: 'none',
-      color: '#fff',
+      textDecoration: "none",
+      color: "#fff",
     },
     obolLogo: {
       backgroundColor: `transparent`,
       backgroundImage: `url(${obol_logo})`,
       backgroundRepeat: `no-repeat`,
       backgroundOrigin: `padding-box`,
-      backgroundPosition: '50%',
+      backgroundPosition: "50%",
       backgroundSize: `contain`,
-      width: '100%',
+      width: "100%",
       maxWidth: `800px`,
-      height: '10rem',
+      height: "10rem",
       margin: `auto`,
-      [theme.breakpoints.up('lg')]: {
+      [theme.breakpoints.up("lg")]: {
         height: "6rem",
       },
     },
     learnMore: {
-      alignSelf: 'center',
-      margin: 'auto'
+      alignSelf: "center",
+      margin: "auto",
     },
     title: {
-      alignSelf: 'center',
+      alignSelf: "center",
       font: "normal normal normal 42px/48px Montserrat",
-      color: '#fff',
+      color: "#fff",
       // backgroundColor: 'red',
-      [theme.breakpoints.up('md')]: {
+      [theme.breakpoints.up("md")]: {
         font: "normal normal normal 64px/72px Montserrat",
       },
     },
     subtitle: {
-      alignSelf: 'center',
-      textAlign: 'center',
-      margin: 'auto',
+      alignSelf: "center",
+      textAlign: "center",
+      margin: "auto",
       font: "normal normal 500 26px/34px Montserrat",
-      color: '#fff',
+      color: "#fff",
       // textShadow: `0px 0px 5px #fff`,
       // backgroundColor: 'green',
-      [theme.breakpoints.up('lg')]: {
+      [theme.breakpoints.up("lg")]: {
         font: "normal normal 500 36px/48px Montserrat",
       },
     },
-  }),
-);
+  })
+)
 
 export default function Header({ siteTitle, siteDescription }) {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <div className={classes.root}>
@@ -148,22 +147,21 @@ export default function Header({ siteTitle, siteDescription }) {
                 color="inherit"
                 className={classes.menuButton}
                 variant="outlined"
-                size={'small'}>
+                size={"small"}
+              >
                 Join the Discord
               </Button>
             </Grid>
           </Grid>
-            <div className={classes.obolLogo} />
-            {/* <Typography className={classes.title} variant="h5">
+          <div className={classes.obolLogo} />
+          {/* <Typography className={classes.title} variant="h5">
               {siteTitle}
             </Typography> */}
-            <Typography className={classes.subtitle} variant="h5" >
-              {siteDescription}
-            </Typography>
-   
+          <Typography className={classes.subtitle} variant="h5">
+            {siteDescription}
+          </Typography>
         </Toolbar>
       </AppBar>
     </div>
-
   )
 }
