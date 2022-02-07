@@ -3,6 +3,7 @@ import { Box, Button, HStack, Icon, Image } from "@chakra-ui/react"
 import ObolBrand from "../../images/obolnetwork.png"
 import HeaderLink, { HeaderLinkProps } from "./HeaderLink"
 import { FaDiscord, GiHamburgerMenu } from "react-icons/all"
+import { Href } from "../../types"
 
 const DesktopHeader: FC<{
   headerLinks: HeaderLinkProps[]
@@ -31,12 +32,18 @@ const DesktopHeader: FC<{
         left="24px"
         margin="auto"
       />
-      <HStack spacing={4}>
+      <HStack spacing={6}>
         {headerLinks.map(link => (
           <HeaderLink {...link} key={link.text} />
         ))}
 
-        <Button leftIcon={<Icon fontSize="24px" as={FaDiscord} />} size="sm">
+        <Button
+          leftIcon={<Icon fontSize="24px" as={FaDiscord} />}
+          size="sm"
+          as="a"
+          href={Href.Discord}
+          target="_blank"
+        >
           Join us
         </Button>
         <Icon

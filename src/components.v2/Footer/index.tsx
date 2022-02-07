@@ -5,6 +5,7 @@ import TwitterIcon from "../Icons/Twitter"
 import DiscordIcon from "../Icons/Discord"
 import { Body } from "../Typography"
 import theme from "../../theme"
+import { Href } from "../../types"
 
 const Footer: FC = () => {
   return (
@@ -16,8 +17,12 @@ const Footer: FC = () => {
       <Image src={obol} w="200px" />
       <HStack spacing="12px">
         <Body>Follow us on</Body>
-        <TwitterIcon boxSize="36px" />
-        <DiscordIcon boxSize="36px" />
+        <a href={Href.Twitter} target="_blank">
+          <TwitterIcon boxSize="36px" />
+        </a>
+        <a href={Href.Discord} target="_blank">
+          <DiscordIcon boxSize="36px" />
+        </a>
       </HStack>
       <Body>©{new Date().getFullYear()} OBOL, All Rights Reserved.</Body>
     </VStack>

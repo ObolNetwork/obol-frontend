@@ -20,7 +20,7 @@ const MobileDrawer: FC<{
         <DrawerCloseButton color="white" />
         <VStack spacing={4}>
           {headerLinks.map(link => (
-            <HeaderLink isMobile {...link} key={link.text} />
+            <HeaderLink isMobile onClose={onClose} {...link} key={link.text} />
           ))}
         </VStack>
       </DrawerContent>

@@ -5,9 +5,10 @@ export interface HeaderLinkProps {
   text: string
   href: string
   isMobile?: boolean
+  onClose?: () => void
 }
 
-const HeaderLink: FC<HeaderLinkProps> = ({ text, href, isMobile }) => {
+const HeaderLink: FC<HeaderLinkProps> = ({ text, href, isMobile, onClose }) => {
   return (
     <Box
       className="link-container"
@@ -20,8 +21,10 @@ const HeaderLink: FC<HeaderLinkProps> = ({ text, href, isMobile }) => {
       <Link
         color="white"
         href={href}
+        target={href.includes("#") ? undefined : "_blank"}
         _hover={{ textDecoration: "none" }}
         fontSize={{ base: "lg", md: undefined }}
+        onClick={onClose}
       >
         {text}
       </Link>
