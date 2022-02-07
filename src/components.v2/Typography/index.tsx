@@ -13,6 +13,19 @@ export const Header2: FC<TextProps> = props => (
   />
 )
 
+export const Header4: FC<TextProps> = props => (
+  <Text
+    {...props}
+    color="white"
+    fontSize="18px"
+    lineHeight="22px"
+    fontWeight="400"
+    as="h4"
+    fontFamily="Rockwell"
+    letterSpacing="-2%"
+  />
+)
+
 export const Header5: FC<TextProps> = props => (
   <Text
     {...props}
