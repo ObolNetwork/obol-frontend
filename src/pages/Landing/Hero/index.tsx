@@ -20,19 +20,20 @@ const Hero = () => {
       bgImage={heroBg}
       bgPosition="center"
       bgRepeat="no-repeat"
-      bgSize="cover"
+      bgSize={{ base: "stretch", sm: "cover" }}
       h="100%"
       position="relative"
     >
       <Box
-        position="absolute"
+        position={{ base: undefined, sm: "absolute" }}
         margin="auto"
         top="50%"
         left={0}
         right={0}
         maxW="1200px"
-        transform="translateY(-50%)"
+        transform={{ base: undefined, sm: "translateY(-50%)" }}
         paddingX="48px"
+        paddingTop={{ base: "48px", sm: 0 }}
       >
         <Stack
           direction={{ base: "column", md: "row" }}
