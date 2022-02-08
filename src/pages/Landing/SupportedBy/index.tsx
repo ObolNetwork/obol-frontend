@@ -1,12 +1,5 @@
 import React, { FC } from "react"
-import {
-  Container,
-  Box,
-  Text,
-  Image,
-  SimpleGrid,
-  VStack,
-} from "@chakra-ui/react"
+import { Container, Box, Image, SimpleGrid, VStack } from "@chakra-ui/react"
 import advancedBlockchain from "../../../images/sponsors/advanced-blockchain.png"
 import archetype from "../../../images/sponsors/archetype.png"
 import attestant from "../../../images/sponsors/attestant.png"
@@ -20,7 +13,7 @@ import lao from "../../../images/sponsors/lao.png"
 import stableNode from "../../../images/sponsors/stable-node.png"
 import stakingFacilities from "../../../images/sponsors/staking-facilities.png"
 import yeildVentures from "../../../images/sponsors/yeild-ventures.png"
-import { Header4 } from "../../../components.v2/Typography"
+import { Header2, Header4 } from "../../../components.v2/Typography"
 
 const sponsorLogos = [
   { text: "Advanced Blockchain", logo: advancedBlockchain },
@@ -42,7 +35,9 @@ const SupportedBy: FC = () => {
   return (
     <Box id="supporters">
       <Container maxW="6xl">
-        <Text>Supported By</Text>
+        <Header2 textAlign="center" my="64px">
+          Supported By
+        </Header2>
         <SimpleGrid minChildWidth="220px" spacing="20px" margin="auto">
           {sponsorLogos.map(({ text, logo }) => (
             <VStack

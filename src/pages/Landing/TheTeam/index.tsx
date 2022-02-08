@@ -1,7 +1,16 @@
 import React, { FC } from "react"
 import { Box, VStack, SimpleGrid, Text } from "@chakra-ui/react"
 import TeamMemberCard from "./TeamMemberCard"
-import geoorge from "../../../images/geoorge.jpg"
+import Collin from "../../../images/team/Collin.png"
+import Corver from "../../../images/team/Corver.png"
+import Dhruv from "../../../images/team/Dhruv.png"
+import Jules from "../../../images/team/Jules.jpg"
+import Oisin from "../../../images/team/Oisin.jpg"
+import Richard from "../../../images/team/Richard.png"
+import Abhishek from "../../../images/team/Abhishek.png"
+import Saleh from "../../../images/team/Saleh.jpg"
+import Chris from "../../../images/team/Chris.png"
+import { Header2 } from "../../../components.v2/Typography"
 
 export interface TeamMember {
   name: string
@@ -17,14 +26,14 @@ const teamMembers: TeamMember[] = [
     title: "Project Lead & Founder",
     twitter: "https://twitter.com/StakeETH",
     github: "https://github.com/collinjmyers",
-    avatar: geoorge,
+    avatar: Collin,
   },
   {
     name: "Oisin Kyne",
     title: "Head of Technology & Co-Founder",
     twitter: "https://twitter.com/OisinKyne",
     github: "https://github.com/OisinKyne",
-    avatar: geoorge,
+    avatar: Oisin,
   },
 
   {
@@ -32,7 +41,7 @@ const teamMembers: TeamMember[] = [
     title: "Dev Ops Lead",
     twitter: "https://twitter.com/eth2devops",
     github: "https://github.com/eth2devops",
-    avatar: geoorge,
+    avatar: Saleh,
   },
 
   {
@@ -40,7 +49,7 @@ const teamMembers: TeamMember[] = [
     title: "Tech Lead",
     twitter: "https://github.com/corverroos",
     github: "https://twitter.com/corverdev",
-    avatar: geoorge,
+    avatar: Corver,
   },
 
   {
@@ -48,7 +57,7 @@ const teamMembers: TeamMember[] = [
     title: "Senior Software Engineer",
     twitter: "https://twitter.com/julesdesmit",
     github: "https://github.com/julesdesmit",
-    avatar: geoorge,
+    avatar: Jules,
   },
 
   {
@@ -56,7 +65,7 @@ const teamMembers: TeamMember[] = [
     title: "Product Lead",
     twitter: "https://twitter.com/Battenfield",
     github: "https://github.com/Battenfield",
-    avatar: geoorge,
+    avatar: Chris,
   },
 
   {
@@ -64,7 +73,7 @@ const teamMembers: TeamMember[] = [
     title: "Software Engineer",
     twitter: "https://twitter.com/dhruvbodani",
     github: "https://github.com/dB2510",
-    avatar: geoorge,
+    avatar: Dhruv,
   },
 
   {
@@ -72,21 +81,23 @@ const teamMembers: TeamMember[] = [
     title: "Software Engineer",
     twitter: "https://twitter.com/xenowits",
     github: "https://github.com/xenowits",
-    avatar: geoorge,
+    avatar: Abhishek,
   },
   {
     name: "Richard Patel",
     title: "Protocol Engineer",
     twitter: "https://twitter.com/terorie_dev",
     github: "https://github.com/terorie",
-    avatar: geoorge,
+    avatar: Richard,
   },
 ]
 
 const TheTeam: FC = () => {
   return (
     <VStack id="team" padding={8}>
-      <Text>the team</Text>
+      <Header2 textAlign="center" my="64px">
+        The Team
+      </Header2>
       <Box
         mx={8}
         bg="obol.gradientDarkOpaque"
