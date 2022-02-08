@@ -5,6 +5,7 @@ import Header from "../components.v2/Header"
 import LandingPage from "./Landing"
 import Footer from "../components.v2/Footer"
 
+//
 const IndexPage = () => {
   return (
     <Box bg="obol.black" h="100vh">
