@@ -3,7 +3,7 @@ module.exports = {
     title: `Obol Network`,
     description: `The Multi-Operator Validator Network`,
     author: `@ObolNetwork`,
-    baseURL: `https://obol.tech`,
+    baseURL: `https://obol.dev`,
   },
   pathPrefix: "/",
   plugins: [

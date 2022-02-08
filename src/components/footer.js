@@ -77,7 +77,7 @@ export default function Footer() {
                     to="/"
                     rel="noopener noreferrer"
                     className={classes.link}
-                >Obol Technologies Inc.
+                >Obol Labs Inc.
                 </Link>
             </p>
 
