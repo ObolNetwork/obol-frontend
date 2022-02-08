@@ -13,7 +13,15 @@ const TeamMemberCard: FC<TeamMember> = ({
 }) => {
   return (
     <VStack>
-      <Image size="lg" src={avatar} borderRadius="50%" />
+      <Image
+        display="block"
+        width="auto"
+        height="auto"
+        maxHeight="180px"
+        maxWidth="180px"
+        src={avatar}
+        borderRadius="50%"
+      />
       <Header4>{name}</Header4>
       <Body align="center">{title}</Body>
       <HStack justifyContent="center" spacing={2}>

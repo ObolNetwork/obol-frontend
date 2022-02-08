@@ -20,7 +20,7 @@ const BuildOnObol = () => {
     >
       <Image
         src={isLargerThan900 ? obolHexes : obolHexesMobile}
-        maxW="750px"
+        maxW={{ base: undefined, sm: "750px" }}
         margin="auto"
       />
     </Box>
