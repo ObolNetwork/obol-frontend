@@ -1,12 +1,19 @@
 import React, { FC } from "react"
-import { Icon, HStack, VStack } from "@chakra-ui/react"
+import { Image, Icon, HStack, VStack } from "@chakra-ui/react"
 import { TeamMember } from "./index"
 import { Body, Header4 } from "../../../components.v2/Typography"
 import { BsGithub, BsTwitter } from "react-icons/all"
 
-const TeamMemberCard: FC<TeamMember> = ({ name, title, github, twitter }) => {
+const TeamMemberCard: FC<TeamMember> = ({
+  name,
+  title,
+  github,
+  twitter,
+  avatar,
+}) => {
   return (
     <VStack>
+      <Image size="lg" src={avatar} borderRadius="50%" />
       <Header4>{name}</Header4>
       <Body align="center">{title}</Body>
       <HStack justifyContent="center" spacing={2}>
