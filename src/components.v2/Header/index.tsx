@@ -19,7 +19,7 @@ const headerLinks: HeaderLinkProps[] = [
     href: "#team",
   },
   {
-    text: "Talent",
+    text: "Jobs",
     href: Href.Talent,
   },
   {

@@ -22,7 +22,7 @@ export interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Colin Meyers",
+    name: "Collin Myers",
     title: "Project Lead & Founder",
     twitter: "https://twitter.com/StakeETH",
     github: "https://github.com/collinjmyers",
@@ -101,7 +101,8 @@ const TheTeam: FC = () => {
       <Box
         mx={8}
         bg="obol.gradientDarkOpaque"
-        p="24px"
+        px="24px"
+        py="48px"
         w="100%"
         maxWidth="998px"
         borderRadius="8px"

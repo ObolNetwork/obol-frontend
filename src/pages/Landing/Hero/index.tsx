@@ -13,19 +13,20 @@ import heroBg from "../../../images/hero-bg.png"
 import obolStack from "../../../images/obol-stack.png"
 import { Body, Header2, Header5 } from "../../../components.v2/Typography"
 import { Href } from "../../../types"
+import { BsArrowRight } from "react-icons/bs"
 
 const Hero = () => {
   return (
     <Box
-      bgImage={heroBg}
+      bgImage={{ base: undefined, sm: heroBg }}
       bgPosition="center"
       bgRepeat="no-repeat"
-      bgSize={{ base: "stretch", sm: "cover" }}
-      h="100%"
+      bgSize="cover"
       position="relative"
+      h={{ base: "auto", sm: "100%" }}
     >
       <Box
-        position={{ base: undefined, sm: "absolute" }}
+        position={{ base: "static", sm: "absolute" }}
         margin="auto"
         top="50%"
         left={0}
@@ -46,10 +47,18 @@ const Hero = () => {
               Join the Proto Community
             </Button>
             <HStack>
-              <Body>Check out</Body>
-              <Link href={Href.Blog} color="obol.lightGreen" fontWeight="700">
+              <Body m="auto">Check out</Body>
+              <Button
+                fontFamily="Avenir Next"
+                variant="link"
+                as="a"
+                href={Href.Blog}
+                color="white"
+                fontWeight="700"
+                rightIcon={<BsArrowRight />}
+              >
                 our blog
-              </Link>
+              </Button>
               <Body>.</Body>
             </HStack>
           </VStack>
