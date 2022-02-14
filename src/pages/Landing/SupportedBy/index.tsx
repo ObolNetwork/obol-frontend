@@ -2,7 +2,6 @@ import React, { FC } from "react"
 import { Container, Box, Image, SimpleGrid, VStack } from "@chakra-ui/react"
 import advancedBlockchain from "../../../images/sponsors/advanced-blockchain.png"
 import archetype from "../../../images/sponsors/archetype.png"
-import attestant from "../../../images/sponsors/attestant.png"
 import blockdaemon from "../../../images/sponsors/blockdaemon.png"
 import chorus from "../../../images/sponsors/chorus.png"
 import coinbaseVentures from "../../../images/sponsors/coinbase-ventures.png"
@@ -10,25 +9,64 @@ import divergence from "../../../images/sponsors/divergence.png"
 import figment from "../../../images/sponsors/figment.png"
 import iosg from "../../../images/sponsors/iosg.png"
 import lao from "../../../images/sponsors/lao.png"
-import stableNode from "../../../images/sponsors/stable-node.png"
 import stakingFacilities from "../../../images/sponsors/staking-facilities.png"
-import yeildVentures from "../../../images/sponsors/yeild-ventures.png"
+import yieldVentures from "../../../images/sponsors/yield-ventures.png"
+import stakeFish from "../../../images/sponsors/stakefish.png"
+import delphi from "../../../images/sponsors/delphi.png"
+import everstake from "../../../images/sponsors/everstake.png"
+import defiAlliance from "../../../images/sponsors/defi-alliance.png"
+
 import { Header2, Header4 } from "../../../components.v2/Typography"
 
 const sponsorLogos = [
-  { text: "Advanced Blockchain", logo: advancedBlockchain },
-  { text: "Archetype", logo: archetype },
-  { text: "Attestant", logo: attestant },
-  { text: "Blockdaemon", logo: blockdaemon },
-  { text: "Chorus", logo: chorus },
-  { text: "Coinbase Ventures", logo: coinbaseVentures },
-  { text: "Divergence", logo: divergence },
-  { text: "Digment", logo: figment },
-  { text: "IOSG", logo: iosg },
-  { text: "The LAO", logo: lao },
-  { text: "Stable Node", logo: stableNode },
-  { text: "Staking Facilities", logo: stakingFacilities },
-  { text: "Yeild Ventures", logo: yeildVentures },
+  {
+    text: "Ethereal Ventures",
+    logo: advancedBlockchain,
+    href: "http://www.etherealventures.com/",
+  },
+  {
+    text: "Archetype Capital",
+    logo: archetype,
+    href: "https://archetypecp.com/",
+  },
+  {
+    text: "Coinbase Ventures",
+    logo: coinbaseVentures,
+    href: "https://www.coinbase.com/ventures",
+  },
+  { text: "Blockdaemon", logo: blockdaemon, href: "https://blockdaemon.com/" },
+  { text: "Figment", logo: figment, href: "https://www.figment.io" },
+  {
+    text: "Staking Facilities",
+    logo: stakingFacilities,
+    href: "https://stakingfacilities.com/",
+  },
+  { text: "Stakefish", logo: stakeFish, href: "https://stake.fish/" },
+  { text: "Chorus One", logo: chorus, href: "https://chorus.one/" },
+  { text: "The LAO", logo: lao, href: "https://www.thelao.io/" },
+  {
+    text: "Yield Ventures",
+    logo: yieldVentures,
+    href: "https://www.yieldventures.io/",
+  },
+  {
+    text: "Divergence Ventures",
+    logo: divergence,
+    href: "https://www.div.vc/",
+  },
+  { text: "IOSG", logo: iosg, href: "https://iosg.vc/" },
+  { text: "Delphi Digital", logo: delphi, href: "https://delphidigital.io/" },
+  { text: "Everstake", logo: everstake, href: "https://everstake.one/" },
+  {
+    text: "Advanced Blockchain",
+    logo: advancedBlockchain,
+    href: "https://www.advancedblockchain.com/",
+  },
+  {
+    text: "Defi Alliance",
+    logo: defiAlliance,
+    href: "https://www.defialliance.co/",
+  },
 ]
 
 const SupportedBy: FC = () => {
@@ -38,9 +76,10 @@ const SupportedBy: FC = () => {
         <Header2 textAlign="center" my="64px">
           Supported By
         </Header2>
-        <SimpleGrid minChildWidth="220px" spacing="20px" margin="auto">
-          {sponsorLogos.map(({ text, logo }) => (
+        <SimpleGrid minChildWidth="250px" spacing="20px" margin="auto">
+          {sponsorLogos.map(({ text, logo, href }) => (
             <VStack
+              key={text}
               justifyContent="flex-end"
               bg="obol.gradientDarkOpaque"
               _hover={{
@@ -50,6 +89,9 @@ const SupportedBy: FC = () => {
               borderRadius="md"
               pb="12px"
               cursor="pointer"
+              as="a"
+              href={href}
+              target="_blank"
             >
               <Box
                 w="250px"

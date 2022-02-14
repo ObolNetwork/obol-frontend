@@ -4,13 +4,12 @@ import {
   Button,
   HStack,
   Image,
-  Link,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/react"
 import heroBg from "../../../images/hero-bg.png"
-import obolStack from "../../../images/obol-stack.png"
+import obolWhite from "../../../images/obol-logo-white.png"
 import { Body, Header2, Header5 } from "../../../components.v2/Typography"
 import { Href } from "../../../types"
 import { BsArrowRight } from "react-icons/bs"
@@ -42,7 +41,7 @@ const Hero = () => {
           spacing={12}
         >
           <VStack>
-            <Image src={obolStack} />
+            <Image src={obolWhite} />
             <Button as="a" target="_blank" href={Href.ProtoForm}>
               Join the Proto Community
             </Button>
@@ -53,6 +52,7 @@ const Hero = () => {
                 variant="link"
                 as="a"
                 href={Href.Blog}
+                target="_blank"
                 color="white"
                 fontWeight="700"
                 rightIcon={<BsArrowRight />}
