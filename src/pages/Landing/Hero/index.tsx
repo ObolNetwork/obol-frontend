@@ -9,7 +9,7 @@ import {
   VStack,
 } from "@chakra-ui/react"
 import heroBg from "../../../images/hero-bg.png"
-import obolWhite from "../../../images/obol-logo-white.png"
+import obolStack from "../../../images/obol-stack.png"
 import { Body, Header2, Header5 } from "../../../components.v2/Typography"
 import { Href } from "../../../types"
 import { BsArrowRight } from "react-icons/bs"
@@ -41,7 +41,7 @@ const Hero = () => {
           spacing={12}
         >
           <VStack>
-            <Image src={obolWhite} />
+            <Image src={obolStack} />
             <Button as="a" target="_blank" href={Href.ProtoForm}>
               Join the Proto Community
             </Button>
