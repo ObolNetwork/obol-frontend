@@ -1,5 +1,6 @@
 import React, { FC } from "react"
 import { Container, Box, Image, SimpleGrid, VStack } from "@chakra-ui/react"
+import etherealVentures from "../../../images/sponsors/ethereal-ventures.png"
 import advancedBlockchain from "../../../images/sponsors/advanced-blockchain.png"
 import archetype from "../../../images/sponsors/archetype.png"
 import blockdaemon from "../../../images/sponsors/blockdaemon.png"
@@ -21,7 +22,7 @@ import { Header2, Header4 } from "../../../components.v2/Typography"
 const sponsorLogos = [
   {
     text: "Ethereal Ventures",
-    logo: advancedBlockchain,
+    logo: etherealVentures,
     href: "http://www.etherealventures.com/",
   },
   {
