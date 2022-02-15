@@ -115,7 +115,6 @@ const SupportedBy: FC = () => {
                   margin="auto"
                 />
               </Box>
-              <Header4>{text}</Header4>
             </VStack>
           ))}
         </SimpleGrid>
