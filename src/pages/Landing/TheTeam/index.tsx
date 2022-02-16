@@ -29,7 +29,7 @@ const teamMembers: TeamMember[] = [
     avatar: Collin,
   },
   {
-    name: "Oisin Kyne",
+    name: "Oisín Kyne",
     title: "Head of Technology & Co-Founder",
     twitter: "https://twitter.com/OisinKyne",
     github: "https://github.com/OisinKyne",
