@@ -20,13 +20,13 @@ export default function App() {
   return (
     <>
       <Helmet>
-        <meta name="Obol" content="Obol is a cool project" />
+        <meta name="Obol" content="The Obol Network is a community and protocol fostering trust minimized staking through multi-operator validation." />
         <meta property="og:title" content="Obol" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Obol is a cool project" />
+        <meta property="og:description" content="The Obol Network is a community and protocol fostering trust minimized staking through multi-operator validation." />
         <meta
           property="og:image"
-          content="%PUBLIC_URL%/ObolHorizonalBlack.png"
+          content="%PUBLIC_URL%/ObolMeta.png"
         />
         <meta property="og:url" content="https://obol.tech/" />
         <meta name="twitter:site:id" content="obolnetwork" />
