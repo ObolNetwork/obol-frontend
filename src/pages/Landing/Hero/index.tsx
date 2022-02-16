@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react"
 import heroBg from "../../../images/hero-bg.png"
 import obolStack from "../../../images/obol-stack.png"
-import { Body, Header2, Header5 } from "../../../components.v2/Typography"
+import { Body, Header2 } from "../../../components.v2/Typography"
 import { Href } from "../../../types"
 import { BsArrowRight } from "react-icons/bs"
 
@@ -64,17 +64,13 @@ const Hero = () => {
           </VStack>
           <VStack maxW={{ base: "100%", md: "500px" }}>
             <Header2>
-              The Obol Network is a trust minimized staking network enabling
-              Ethereum to scale to its next billion users.
+              The Obol Network is a community and protocol fostering trust
+              minimized staking through multi-operator validation.
             </Header2>
-            <Header5>
-              A protocol and ecosystem to foster the adoption of trust minimized
-              staking through multi-operator validation.
-            </Header5>
             <Text color={"white"}>
-              Obol will enable low-trust permissionless access to Ethereum
-              staking yield, which can be used as a core building block in a
-              variety of Web3 products.
+              Obol will help Ethereum scale to a billion users by enabling
+              low-trust access to Ethereum staking yield, a cornerstone value
+              stream of Web3
             </Text>
           </VStack>
         </Stack>
