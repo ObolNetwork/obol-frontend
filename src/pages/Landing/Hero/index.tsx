@@ -59,7 +59,6 @@ const Hero = () => {
               >
                 our blog
               </Button>
-              <Body>.</Body>
             </HStack>
           </VStack>
           <VStack maxW={{ base: "100%", md: "500px" }}>
