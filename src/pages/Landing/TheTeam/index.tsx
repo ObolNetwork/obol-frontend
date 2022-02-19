@@ -6,7 +6,6 @@ import Corver from "../../../images/team/Corver.png"
 import Dhruv from "../../../images/team/Dhruv.png"
 import Jules from "../../../images/team/Jules.jpg"
 import Oisin from "../../../images/team/Oisin.jpg"
-import Richard from "../../../images/team/Richard.png"
 import Abhishek from "../../../images/team/Abhishek.png"
 import Saleh from "../../../images/team/Saleh.jpg"
 import Chris from "../../../images/team/Chris.png"
@@ -82,14 +81,7 @@ const teamMembers: TeamMember[] = [
     twitter: "https://twitter.com/xenowits",
     github: "https://github.com/xenowits",
     avatar: Abhishek,
-  },
-  {
-    name: "Richard Patel",
-    title: "Protocol Engineer",
-    twitter: "https://twitter.com/terorie_dev",
-    github: "https://github.com/terorie",
-    avatar: Richard,
-  },
+  }
 ]
 
 const TheTeam: FC = () => {
