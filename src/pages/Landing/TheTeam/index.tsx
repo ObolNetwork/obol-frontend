@@ -4,7 +4,6 @@ import TeamMemberCard from "./TeamMemberCard"
 import Collin from "../../../images/team/Collin.png"
 import Corver from "../../../images/team/Corver.png"
 import Dhruv from "../../../images/team/Dhruv.png"
-import Jules from "../../../images/team/Jules.jpg"
 import Oisin from "../../../images/team/Oisin.jpg"
 import Abhishek from "../../../images/team/Abhishek.png"
 import Saleh from "../../../images/team/Saleh.jpg"
@@ -49,14 +48,6 @@ const teamMembers: TeamMember[] = [
     twitter: "https://github.com/corverroos",
     github: "https://twitter.com/corverdev",
     avatar: Corver,
-  },
-
-  {
-    name: "Jules De Smit",
-    title: "Senior Software Engineer",
-    twitter: "https://twitter.com/julesdesmit",
-    github: "https://github.com/julesdesmit",
-    avatar: Jules,
   },
 
   {
