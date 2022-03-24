@@ -13,7 +13,7 @@ import Header from "./header"
 import "./layout.css"
 import {
   ThemeProvider,
-  createMuiTheme,
+  createTheme,
   CssBaseline,
 } from "@material-ui/core"
 import { SnackbarProvider } from "notistack"
@@ -21,7 +21,7 @@ import "typeface-montserrat"
 import Footer from "./footer"
 
 // Website theme
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       light: `#61ac9f`,
