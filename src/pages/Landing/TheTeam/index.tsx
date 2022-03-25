@@ -8,6 +8,7 @@ import Oisin from "../../../images/team/Oisin.jpg"
 import Abhishek from "../../../images/team/Abhishek.png"
 import Saleh from "../../../images/team/Saleh.jpg"
 import Chris from "../../../images/team/Chris.png"
+import Edax from "../../../images/team/Edax.png"
 import { Header2 } from "../../../components.v2/Typography"
 
 export interface TeamMember {
@@ -72,7 +73,14 @@ const teamMembers: TeamMember[] = [
     twitter: "https://twitter.com/xenowits",
     github: "https://github.com/xenowits",
     avatar: Abhishek,
-  }
+  },
+  {
+    name: "Edax Ucles",
+    title: "Frontend Developer",
+    twitter: "https://twitter.com/f1miyamoto",
+    github: "https://github.com/f1lander",
+    avatar: Edax,
+  },
 ]
 
 const TheTeam: FC = () => {
