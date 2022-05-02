@@ -46,8 +46,8 @@ const teamMembers: TeamMember[] = [
   {
     name: "Corver Roos",
     title: "Tech Lead",
-    twitter: "https://github.com/corverroos",
-    github: "https://twitter.com/corverdev",
+    twitter: "https://twitter.com/corverdev",
+    github: "https://github.com/corverroos",
     avatar: Corver,
   },
 
